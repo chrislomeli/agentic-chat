@@ -17,5 +17,11 @@ uv.lock
 .ruff_cache/
 .mypy_cache/
 
+# Node / TypeScript
+node_modules/
+clients/typescript/dist/
+examples/react-hello/dist/
+*.tsbuildinfo
+
 # OS
 .DS_Store

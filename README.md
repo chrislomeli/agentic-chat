@@ -95,6 +95,14 @@ LangGraph, Postgres, or any domain code.
 - `console.py` — render a Frame stream to a terminal (CLI runner)
 - `llm.py` — provider-agnostic `LLMClient` + `LLMRegistry`
 
+## Front-end client
+
+`clients/typescript` is **agent-chat-client**, the framework-agnostic TS twin of
+this backend: a robust SSE→Frame decoder plus a thin `ChatClient`. Your UI
+consumes typed Frames instead of hand-parsing SSE. `examples/react-hello` is a
+runnable React app that drives the `hello_world` backend through it — the
+full-stack hello world.
+
 ## Reference adapter
 
 `journal_agent/api/adapter.py` is a working `TurnRunner` over a real LangGraph

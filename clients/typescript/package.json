@@ -1,0 +1,22 @@
+{
+  "name": "agent-chat-client",
+  "version": "0.1.0",
+  "description": "Framework-agnostic TypeScript client for the agent_chat Action protocol: a robust SSE frame decoder plus a thin fetch-based ChatClient.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0"
+  }
+}
